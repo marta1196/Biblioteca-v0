@@ -112,14 +112,7 @@ public class Prestamos {
 
 	private boolean mismoMes(LocalDate primeraFecha, LocalDate segundaFecha) {
 
-		boolean esMismoMes = false;
-
-		if (primeraFecha.getYear() == segundaFecha.getYear() && primeraFecha.getMonth() == segundaFecha.getMonth()) {
-
-			esMismoMes = true;
-		}
-
-		return esMismoMes;
+		return (primeraFecha.getYear() == segundaFecha.getYear() && primeraFecha.getMonth() == segundaFecha.getMonth());
 	}
 
 	public int getTamano() {
@@ -179,26 +172,12 @@ public class Prestamos {
 
 	private boolean tamanoSuperado(int indice) {
 
-		boolean tamanoSuperado = false;
-
-		if (indice >= tamano) {
-
-			tamanoSuperado = true;
-		}
-
-		return tamanoSuperado;
+		return indice >= tamano;
 	}
 
 	private boolean capacidadSuperada(int indice) {
 
-		boolean capacidadSuperada = false;
-
-		if (indice >= capacidad) {
-
-			capacidadSuperada = true;
-		}
-
-		return capacidadSuperada;
+		return indice >= capacidad;
 	}
 
 	public void devolver(Prestamo prestamo, LocalDate fechaDevolver) throws OperationNotSupportedException {

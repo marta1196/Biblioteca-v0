@@ -7,8 +7,8 @@ import java.util.Objects;
 
 public class Prestamo {
 
-	private static int MAX_DIAS_PRESTAMO = 20;
-	public static DateTimeFormatter FORMATO_FECHA = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+	private static final int MAX_DIAS_PRESTAMO = 20;
+	public static final DateTimeFormatter FORMATO_FECHA = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
 	private LocalDate fechaPrestamo;
 	private LocalDate fechaDevolucion;

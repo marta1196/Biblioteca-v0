@@ -96,26 +96,12 @@ public class Alumnos {
 
 	private boolean tamanoSuperado(int indice) {
 
-		boolean tamanoSuperado = false;
-
-		if (indice >= tamano) {
-
-			tamanoSuperado = true;
-		}
-
-		return tamanoSuperado;
+		return indice >= tamano;
 	}
 
 	private boolean capacidadSuperada(int indice) {
 
-		boolean capacidadSuperada = false;
-
-		if (indice >= capacidad) {
-
-			capacidadSuperada = true;
-		}
-
-		return capacidadSuperada;
+		return indice >= capacidad;
 	}
 
 	public Alumno buscar(Alumno alumno) {
